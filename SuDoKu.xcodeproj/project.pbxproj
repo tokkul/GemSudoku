@@ -33,6 +33,8 @@
 		3AD6B03B2B7E7D740047E28E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD6B03A2B7E7D740047E28E /* GameView.swift */; };
 		3AD6B03F2B7E7D920047E28E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD6B03E2B7E7D920047E28E /* Game.swift */; };
 		3AD6B0412B7E8C5B0047E28E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD6B0402B7E8C5B0047E28E /* GridView.swift */; };
+		3ADFC27B2B80ADCA00C21CC0 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFC27A2B80ADCA00C21CC0 /* SetupView.swift */; };
+		3ADFC27D2B80AE7400C21CC0 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFC27C2B80AE7400C21CC0 /* PlayView.swift */; };
 		3AFF40562B7EC82800301537 /* StatisticsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF40552B7EC82800301537 /* StatisticsModifier.swift */; };
 		3AFF40582B7EC84100301537 /* StatisticsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF40572B7EC84100301537 /* StatisticsSheet.swift */; };
 		3AFF405A2B7ECB1000301537 /* SolvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF40592B7ECB1000301537 /* SolvedView.swift */; };
@@ -78,6 +80,8 @@
 		3AD6B03A2B7E7D740047E28E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		3AD6B03E2B7E7D920047E28E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3AD6B0402B7E8C5B0047E28E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		3ADFC27A2B80ADCA00C21CC0 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		3ADFC27C2B80AE7400C21CC0 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		3AFF40552B7EC82800301537 /* StatisticsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModifier.swift; sourceTree = "<group>"; };
 		3AFF40572B7EC84100301537 /* StatisticsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsSheet.swift; sourceTree = "<group>"; };
 		3AFF40592B7ECB1000301537 /* SolvedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvedView.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 				3AD6B03D2B7E7D7E0047E28E /* Core */,
 				3AD6B03C2B7E7D790047E28E /* Game */,
 				3AD6B0332B7E4D830047E28E /* Board */,
+				3ADFC2792B80ADB900C21CC0 /* Utility */,
 				3AFF40542B7EC81800301537 /* Statistics */,
 				3A11A7F62B7F5C87001F26B3 /* Info.plist */,
 				3AD6B01C2B7E4B210047E28E /* Assets.xcassets */,
@@ -171,6 +176,7 @@
 				3AD6B0402B7E8C5B0047E28E /* GridView.swift */,
 				3AD567462B7FAE0C00A33160 /* GridView+Frame.swift */,
 				3A8A7A192B7E9C9400732A44 /* NumberView.swift */,
+				3ADFC27C2B80AE7400C21CC0 /* PlayView.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -185,11 +191,19 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		3ADFC2792B80ADB900C21CC0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFC27A2B80ADCA00C21CC0 /* SetupView.swift */,
+				3AB6D0FA2B7F90BA007C7FA3 /* FailedView.swift */,
+				3AFF40592B7ECB1000301537 /* SolvedView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		3AFF40542B7EC81800301537 /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
-				3AB6D0FA2B7F90BA007C7FA3 /* FailedView.swift */,
-				3AFF40592B7ECB1000301537 /* SolvedView.swift */,
 				3AFF40572B7EC84100301537 /* StatisticsSheet.swift */,
 				3AFF40552B7EC82800301537 /* StatisticsModifier.swift */,
 			);
@@ -330,7 +344,9 @@
 				3AFF40562B7EC82800301537 /* StatisticsModifier.swift in Sources */,
 				3A702A3A2B7F40130037FCFE /* Board+Suggestions.swift in Sources */,
 				3AD6B0392B7E4DAD0047E28E /* Board+Validate.swift in Sources */,
+				3ADFC27B2B80ADCA00C21CC0 /* SetupView.swift in Sources */,
 				3AFF405A2B7ECB1000301537 /* SolvedView.swift in Sources */,
+				3ADFC27D2B80AE7400C21CC0 /* PlayView.swift in Sources */,
 				3A8A7A272B7EA86700732A44 /* Board+Solve.swift in Sources */,
 				3A8A7A1A2B7E9C9400732A44 /* NumberView.swift in Sources */,
 				3AC0CC7A2B7F6989006392BA /* Board+Clue.swift in Sources */,

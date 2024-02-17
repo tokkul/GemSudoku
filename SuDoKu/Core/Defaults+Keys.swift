@@ -19,6 +19,8 @@ public extension Defaults.Keys {
     static let size = Key<Board.Size>("size", default: .NineXNine)
     static let difficulty = Key<Board.Difficulty>("difficulty", default: .easy)
     
+    static let setupComplete = Key("setupComplete", default: false)
+    
     // MARK: Statistics
     
     static let clues = Key("clues", default: 0)

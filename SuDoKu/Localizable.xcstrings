@@ -553,6 +553,134 @@
         }
       }
     },
+    "setup.continue" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiter"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
+          }
+        }
+      }
+    },
+    "setup.mistakes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler zulassen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allow mistakes"
+          }
+        }
+      }
+    },
+    "setup.mistakes.text" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wenn dies eingeschalt ist können falsche Eingaben gemacht werden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enabling this will allow you to input wrong guesses"
+          }
+        }
+      }
+    },
+    "setup.name" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftSuDoKu"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftSuDoKu"
+          }
+        }
+      }
+    },
+    "setup.suggestions" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorschläge"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suggestion Strength"
+          }
+        }
+      }
+    },
+    "setup.suggestions.text" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wenn du \"Alle\" auswählst werden die aktuelle Reihe, Linie und der ausgewählte Block überprüft. Bei \"Block\" nur der aktuelle Block und bei \"Keine\" werden keine Vorschläge angezeigt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If you select \"full\" suggestions will check the current row, column and square. Selecting \"square\" onyl checks the current square. \"none\" will disable suggestions"
+          }
+        }
+      }
+    },
+    "setup.text" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Willkommne zu noch einer SuDoKu app"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to jet another SuDoKu app"
+          }
+        }
+      }
+    },
+    "setup.title" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einrichten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setup"
+          }
+        }
+      }
+    },
     "solved.congratulations" : {
       "localizations" : {
         "de" : {
@@ -654,7 +782,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zurücksetzten"
+            "value" : "Zurücksetzen"
           }
         },
         "en" : {
@@ -709,6 +837,54 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SuDoKu"
+          }
+        }
+      }
+    },
+    "suggestions.full" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full"
+          }
+        }
+      }
+    },
+    "suggestions.none" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "None"
+          }
+        }
+      }
+    },
+    "suggestions.square" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Block"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Square"
           }
         }
       }

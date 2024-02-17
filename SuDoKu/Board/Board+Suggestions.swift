@@ -7,6 +7,7 @@
 
 import Foundation
 import Defaults
+import SwiftUI
 
 public extension Board {
     func suggestions(index: Int, strength: SuggestionStrength) -> [Int] {
@@ -49,9 +50,22 @@ public extension Board {
         return (1...length).filter { !seen.contains($0) }
     }
     
-    enum SuggestionStrength: Int, Defaults.Serializable {
+    enum SuggestionStrength: Int, CaseIterable, Defaults.Serializable {
         case none = 0
         case square = 1
         case full = 2
+    }
+}
+
+extension Board.SuggestionStrength {
+    var name: LocalizedStringKey {
+        switch self {
+            case .none:
+                "suggestions.none"
+            case .square:
+                "suggestions.square"
+            case .full:
+                "suggestions.full"
+        }
     }
 }
