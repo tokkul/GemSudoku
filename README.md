@@ -17,8 +17,8 @@ This is very much a hobby side project, but suggestions on GitHub are welcome
 
 ## Screenshots
 
-| Game | Statistics | Success |
-| ------------- | ------------- | ------------- |
-| <img src="/Screenshots/Game.png?raw=true" alt="Game" /> | <img src="/Screenshots/Statistics.png?raw=true" alt="Statistics" /> | <img src="/Screenshots/Success.png?raw=true" alt="Success" /> |
+| Game | Statistics | Success | Setup |
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="/Screenshots/Game.png?raw=true" alt="Game" /> | <img src="/Screenshots/Statistics.png?raw=true" alt="Statistics" /> | <img src="/Screenshots/Success.png?raw=true" alt="Success" /> | <img src="/Screenshots/Setup.png?raw=true" alt="Setup" /> |
 
 Thanks to Manish Kumar on [Stackoverflow](https://stackoverflow.com/questions/6924216/how-to-generate-sudoku-boards-with-unique-solutions/61442050#61442050) for their great starting point for a board generation algorithm!

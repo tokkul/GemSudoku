@@ -75,7 +75,7 @@ struct SetupView: View {
                 .navigationTitle("setup.title")
                 .navigationBarTitleDisplayMode(.inline)
             }
-            .presentationDetents([.medium])
+            .presentationDetents([.medium, .large])
             .presentationDragIndicator(.visible)
         }
         .onChange(of: setupSheetPresented) {

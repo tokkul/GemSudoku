@@ -17,10 +17,11 @@ struct SolvedView: View {
     
     var body: some View {
         VStack {
+            Spacer()
+            
             Image(systemName: "medal.fill")
                 .font(.system(size: 75))
                 .foregroundStyle(.accent)
-                .padding(.top, 200)
                 .padding(.bottom, 40)
                 .rotationEffect(.degrees(animate ? 0 : -35))
                 .scaleEffect(animate ? 1 : 1.2)
