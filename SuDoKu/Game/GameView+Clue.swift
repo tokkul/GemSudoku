@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import Defaults
 
 extension GameView {
     struct ClueView: View {
+        @Default(.allowMistakes) private var allowMistakes
+        
         let game: Game
         
         @Binding var blockUI: Bool
@@ -49,9 +52,14 @@ extension GameView {
                     blockUI = false
                 }
             } label: {
-                Label("clue", systemImage: "questionmark.circle.fill")
-                    .foregroundStyle(.secondary)
+                if allowMistakes {
+                    Text("clue.disabled")
+                } else {
+                    Label("clue", systemImage: "questionmark.circle.fill")
+                        .foregroundStyle(.secondary)
+                }
             }
+            .disabled(allowMistakes)
         }
     }
 }

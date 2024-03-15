@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Defaults
 
 struct GridView: View {
     let game: Game
@@ -34,6 +35,8 @@ struct GridView: View {
 
 extension GridView {
     struct Grid: View {
+        @Default(.allowMistakes) private var allowMistakes
+        
         let game: Game
         let size: CGFloat
         
@@ -59,11 +62,21 @@ extension GridView {
                                     
                                     return currentSquareX == x && currentSquareY == y
                                 }
-                               
+                                
                                 return false
                             }()
                             
-                            Group {
+                            Button {
+                                if game.board.values[index] == nil || allowMistakes {
+                                    withAnimation(.spring) {
+                                        if selectedSpace == index {
+                                            selectedSpace = nil
+                                        } else {
+                                            selectedSpace = index
+                                        }
+                                    }
+                                }
+                            } label: {
                                 if let number = game.board.values[index] {
                                     Text(String(number))
                                         .font(.title3)
@@ -76,18 +89,12 @@ extension GridView {
                                                 blendDuration: 0.2)
                                             .delay(
                                                 (Double(index) / Double(game.board.length * game.board.length)) * 0.5),
-                                                value: animate)
+                                            value: animate)
                                 } else if selectedSpace == index {
                                     Rectangle()
                                         .foregroundStyle(.gray.opacity(0.5))
                                 } else {
-                                    Button {
-                                        withAnimation(.spring) {
-                                            selectedSpace = index
-                                        }
-                                    } label: {
-                                        Color.clear
-                                    }
+                                    Color.clear
                                 }
                             }
                             .frame(width: size, height: size)

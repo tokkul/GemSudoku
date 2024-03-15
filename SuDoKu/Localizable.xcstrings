@@ -113,6 +113,22 @@
         }
       }
     },
+    "clue.disabled" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hinweise deaktiviert"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clues are disabled"
+          }
+        }
+      }
+    },
     "clues %lld" : {
       "localizations" : {
         "de" : {
