@@ -14,6 +14,12 @@
             "state" : "translated",
             "value" : "%lld Correct"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Rätt"
+          }
         }
       }
     },
@@ -50,6 +56,24 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "%lld Mistakes"
+                }
+              }
+            }
+          }
+        },
+        "sv" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Misstag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Misstag"
                 }
               }
             }
@@ -94,6 +118,24 @@
               }
             }
           }
+        },
+        "sv" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Försök"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Försök"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -110,6 +152,12 @@
             "state" : "translated",
             "value" : "Get a clue"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få ett förslag"
+          }
         }
       }
     },
@@ -125,6 +173,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Clues are disabled"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förslag inaktiverade"
           }
         }
       }
@@ -162,6 +216,24 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "%lld Clues"
+                }
+              }
+            }
+          }
+        },
+        "sv" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Förslag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Förslag"
                 }
               }
             }
@@ -206,6 +278,24 @@
               }
             }
           }
+        },
+        "sv" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Korrekt input"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Korrekt input"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -214,13 +304,19 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Entwickelt von Rasmus Krämer"
+            "value" : "Modified by Peter Eriksson"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Developed by Rasmus Krämer"
+            "value" : "Modified by Peter Eriksson"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modified by Peter Eriksson"
           }
         }
       }
@@ -238,6 +334,12 @@
             "state" : "translated",
             "value" : "Difficulty"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svårighet"
+          }
         }
       }
     },
@@ -253,6 +355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Easy"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lätt"
           }
         }
       }
@@ -270,6 +378,12 @@
             "state" : "translated",
             "value" : "Extreme"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extrem"
+          }
         }
       }
     },
@@ -286,6 +400,12 @@
             "state" : "translated",
             "value" : "Hard"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svår"
+          }
         }
       }
     },
@@ -298,6 +418,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medium"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Medium"
@@ -342,6 +468,24 @@
               }
             }
           }
+        },
+        "sv" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Lätta pussel löst"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Lätta pussel lösta"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -382,6 +526,24 @@
               }
             }
           }
+        },
+        "sv" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Extremsvårt pussel löst"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Extremsvåra pussel lösta"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -397,6 +559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Try again"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Försök igen"
           }
         }
       }
@@ -414,6 +582,12 @@
             "state" : "translated",
             "value" : "Sorry, your solution is not correct... Try adjusting the difficulty, suggestion strength or disabling \"allow mistakes\""
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorry, din lösning är inte korrekt.. prova med en annan svårighetsgrad eller slå av ”tillåt misstag”"
+          }
         }
       }
     },
@@ -429,6 +603,29 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "You failed"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oops försök igen"
+          }
+        }
+      }
+    },
+    "gem" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toggle Gem or Color"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj utseende"
           }
         }
       }
@@ -466,6 +663,24 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "%lld Hard puzzles solved"
+                }
+              }
+            }
+          }
+        },
+        "sv" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Svårt pussel löst"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Svåra pussel lösta"
                 }
               }
             }
@@ -510,6 +725,24 @@
               }
             }
           }
+        },
+        "sv" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Mellansvårt pussel löst"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Mellansvåra pussel lösta"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -550,6 +783,24 @@
               }
             }
           }
+        },
+        "sv" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Misstag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Misstag"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -565,6 +816,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Retry"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Försök igen"
           }
         }
       }
@@ -582,6 +839,12 @@
             "state" : "translated",
             "value" : "Continue"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsätt"
+          }
         }
       }
     },
@@ -597,6 +860,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Allow mistakes"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tillåt misstag"
           }
         }
       }
@@ -614,6 +883,12 @@
             "state" : "translated",
             "value" : "Enabling this will allow you to input wrong guesses"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om du slår på den här så tillåts misstag"
+          }
         }
       }
     },
@@ -622,13 +897,19 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftSuDoKu"
+            "value" : "GemSudoku"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftSuDoKu"
+            "value" : "GemSudoku"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GemSudoku"
           }
         }
       }
@@ -646,6 +927,12 @@
             "state" : "translated",
             "value" : "Suggestion Strength"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förslags styrka"
+          }
         }
       }
     },
@@ -662,6 +949,12 @@
             "state" : "translated",
             "value" : "If you select \"full\" suggestions will check the current row, column and square. Selecting \"square\" onyl checks the current square. \"none\" will disable suggestions"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om du väljer ”full” kontrolleras rad och rektangel. Väljer du ”rektangel” kontrolleras 3*3 ruta. Väljer du ingen så stängs förslagsfunktionen av."
+          }
         }
       }
     },
@@ -669,14 +962,20 @@
       "localizations" : {
         "de" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Willkommne zu noch einer SuDoKu app"
+            "state" : "needs_review",
+            "value" : "Willkommne zu Colorsudoku"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Welcome to jet another SuDoKu app"
+            "value" : "Welcome GemSudoku"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välkommen till GemSuDoKu"
           }
         }
       }
@@ -694,6 +993,12 @@
             "state" : "translated",
             "value" : "Setup"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar"
+          }
         }
       }
     },
@@ -709,6 +1014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Congratulations"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grattis"
           }
         }
       }
@@ -726,6 +1037,12 @@
             "state" : "translated",
             "value" : "You successfully solved this puzzle, good work!"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du löste pusslet, bra jobbat!"
+          }
         }
       }
     },
@@ -741,6 +1058,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "New game"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nytt spel"
           }
         }
       }
@@ -758,21 +1081,11 @@
             "state" : "translated",
             "value" : "Statistics"
           }
-        }
-      }
-    },
-    "statistics.github" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "GitHub"
-          }
         },
-        "en" : {
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "GitHub"
+            "value" : "Statistik"
           }
         }
       }
@@ -790,6 +1103,12 @@
             "state" : "translated",
             "value" : "This game is no longer eligible for statistics"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detta spel kan inte längre vara med i statistiken då du fått förslag"
+          }
         }
       }
     },
@@ -805,6 +1124,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reset statistics"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återställ statistiken"
           }
         }
       }
@@ -822,6 +1147,12 @@
             "state" : "translated",
             "value" : "Settings"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar"
+          }
         }
       }
     },
@@ -838,6 +1169,12 @@
             "state" : "translated",
             "value" : "Statistics"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statistik"
+          }
         }
       }
     },
@@ -846,13 +1183,19 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SuDoKu"
+            "value" : "GemSudoku"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SuDoKu"
+            "value" : "GemSudoku"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GemSudoku"
           }
         }
       }
@@ -866,6 +1209,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Full"
@@ -886,6 +1235,12 @@
             "state" : "translated",
             "value" : "None"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen"
+          }
         }
       }
     },
@@ -901,6 +1256,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Square"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rektangel"
           }
         }
       }

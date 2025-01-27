@@ -20,11 +20,11 @@ struct SetupView: View {
         VStack {
             Spacer()
             
-            Image("SuDoKu")
-                .resizable()
-                .aspectRatio(1, contentMode: .fit)
-                .frame(width: 100)
-                .padding(.bottom, 25)
+            Image(.purple)
+//                .resizable()
+//                .aspectRatio(1, contentMode: .fit)
+//                .frame(width: 100)
+//                .padding(.bottom, 25)
             
             Text("setup.name")
                 .fontDesign(.rounded)

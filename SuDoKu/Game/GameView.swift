@@ -2,7 +2,8 @@
 //  GameView.swift
 //  SuDoKu
 //
-//  Created by Rasmus Krämer on 15.02.24.
+//  Created by Rasmus Krämer on 15\.02\.24\. 
+//  Modified by Peter Eriksson 2025-01-26
 //
 
 import SwiftUI
@@ -11,6 +12,7 @@ import Defaults
 struct GameView: View {
     @Default(.allowMistakes) private var allowMistakes
     @Default(.difficulty) private var difficulty
+    @State private var displayMode: DisplayMode = .image
     
     let game: Game
     let completedCallback: () -> Void
@@ -20,6 +22,8 @@ struct GameView: View {
     @State private var shake = false
     @State private var blockUI = false
     @State private var selectedSpace: Int?
+    
+    
     
     private var selectedSpaceProxy: Binding<Int?> {
         .init(get: { selectedSpace }, set: {
@@ -50,15 +54,15 @@ struct GameView: View {
             .font(.caption.smallCaps())
             .foregroundStyle(.secondary)
             
-            GridView(game: game, selectedSpace: selectedSpaceProxy, animation: $animation)
+            GridView(game: game, selectedSpace: selectedSpaceProxy, animation: $animation, displayMode: $displayMode)
                 .offset(x: shake ? 30 : 0)
             
-            NumberView(game: game, shake: $shake, selectedSpace: selectedSpaceProxy, animation: $animation)
+            NumberView(game: game, shake: $shake, selectedSpace: selectedSpaceProxy, animation: $animation, displayMode: $displayMode)
                 .padding(.top, 40)
             
             Spacer()
             
-            ClueView(game: game, blockUI: $blockUI, selectedSpace: $selectedSpace)
+            ClueView(game: game, blockUI: $blockUI, selectedSpace: $selectedSpace, displayMode: $displayMode)
         }
         .padding()
         .environment(game)

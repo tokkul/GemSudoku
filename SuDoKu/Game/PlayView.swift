@@ -110,8 +110,10 @@ extension PlayView {
                         } label: {
                             Image(systemName: "bolt.fill")
                         }
+                     }
+                        
                     }
-                }
+            
                 #endif
         }
     }

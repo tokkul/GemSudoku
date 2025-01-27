@@ -2,7 +2,8 @@
 //  StatisticsSheet.swift
 //  SuDoKu
 //
-//  Created by Rasmus Krämer on 15.02.24.
+//  Created by Rasmus Krämer on 15\.02\.24\. 
+//  Modified by Peter Eriksson 2025-01-26
 //
 
 import SwiftUI
@@ -39,11 +40,11 @@ struct StatisticsSheet: View {
                 }
                 
                 Section {
-                    Button {
-                        UIApplication.shared.open(URL(string: "https://github.com/rasmuslos/SuDoKu")!)
-                    } label: {
-                        Text("statistics.github")
-                    }
+//                    Button {
+//                        UIApplication.shared.open(URL(string: "https://github.com/rasmuslos/SuDoKu")!)
+//                    } label: {
+//                        Text("statistics.github")
+//                    }
                     
                     Button {
                         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)

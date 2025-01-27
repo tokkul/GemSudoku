@@ -38,6 +38,7 @@
 		3AFF40562B7EC82800301537 /* StatisticsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF40552B7EC82800301537 /* StatisticsModifier.swift */; };
 		3AFF40582B7EC84100301537 /* StatisticsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF40572B7EC84100301537 /* StatisticsSheet.swift */; };
 		3AFF405A2B7ECB1000301537 /* SolvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF40592B7ECB1000301537 /* SolvedView.swift */; };
+		95C285CB2D466FD400CE99C7 /* ImageUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C285CA2D466FB800CE99C7 /* ImageUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,11 +70,11 @@
 		3AD567442B7FACD100A33160 /* Board+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Board+Animation.swift"; sourceTree = "<group>"; };
 		3AD567462B7FAE0C00A33160 /* GridView+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Frame.swift"; sourceTree = "<group>"; };
 		3AD567482B7FAE7B00A33160 /* GameView+Clue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameView+Clue.swift"; sourceTree = "<group>"; };
-		3AD6B0152B7E4B200047E28E /* SuDoKu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuDoKu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD6B0152B7E4B200047E28E /* GemSudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemSudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD6B0182B7E4B200047E28E /* SuDoKuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuDoKuApp.swift; sourceTree = "<group>"; };
 		3AD6B01A2B7E4B200047E28E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3AD6B01C2B7E4B210047E28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3AD6B02A2B7E4D4B0047E28E /* SuDoKuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuDoKuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD6B02A2B7E4D4B0047E28E /* GemSudokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GemSudokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD6B0342B7E4D8B0047E28E /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		3AD6B0362B7E4D9F0047E28E /* Board+Generate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Board+Generate.swift"; sourceTree = "<group>"; };
 		3AD6B0382B7E4DAD0047E28E /* Board+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Board+Validate.swift"; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		3AFF40552B7EC82800301537 /* StatisticsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModifier.swift; sourceTree = "<group>"; };
 		3AFF40572B7EC84100301537 /* StatisticsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsSheet.swift; sourceTree = "<group>"; };
 		3AFF40592B7ECB1000301537 /* SolvedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvedView.swift; sourceTree = "<group>"; };
+		95C285CA2D466FB800CE99C7 /* ImageUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +121,8 @@
 		3AD6B0162B7E4B200047E28E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AD6B0152B7E4B200047E28E /* SuDoKu.app */,
-				3AD6B02A2B7E4D4B0047E28E /* SuDoKuTests.xctest */,
+				3AD6B0152B7E4B200047E28E /* GemSudoku.app */,
+				3AD6B02A2B7E4D4B0047E28E /* GemSudokuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +171,7 @@
 		3AD6B03C2B7E7D790047E28E /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				95C285CA2D466FB800CE99C7 /* ImageUtilities.swift */,
 				3AD6B03E2B7E7D920047E28E /* Game.swift */,
 				3AB6D0FC2B7F93C9007C7FA3 /* Game+Interact.swift */,
 				3AD6B03A2B7E7D740047E28E /* GameView.swift */,
@@ -213,9 +216,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3AD6B0142B7E4B1F0047E28E /* SuDoKu */ = {
+		3AD6B0142B7E4B1F0047E28E /* GemSudoku */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AD6B0232B7E4B210047E28E /* Build configuration list for PBXNativeTarget "SuDoKu" */;
+			buildConfigurationList = 3AD6B0232B7E4B210047E28E /* Build configuration list for PBXNativeTarget "GemSudoku" */;
 			buildPhases = (
 				3AD6B0112B7E4B1F0047E28E /* Sources */,
 				3AD6B0122B7E4B1F0047E28E /* Frameworks */,
@@ -226,17 +229,17 @@
 			);
 			dependencies = (
 			);
-			name = SuDoKu;
+			name = GemSudoku;
 			packageProductDependencies = (
 				3A8A7A1C2B7EA17500732A44 /* Defaults */,
 			);
 			productName = SoDoKu;
-			productReference = 3AD6B0152B7E4B200047E28E /* SuDoKu.app */;
+			productReference = 3AD6B0152B7E4B200047E28E /* GemSudoku.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3AD6B0292B7E4D4B0047E28E /* SuDoKuTests */ = {
+		3AD6B0292B7E4D4B0047E28E /* GemSudokuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AD6B0302B7E4D4B0047E28E /* Build configuration list for PBXNativeTarget "SuDoKuTests" */;
+			buildConfigurationList = 3AD6B0302B7E4D4B0047E28E /* Build configuration list for PBXNativeTarget "GemSudokuTests" */;
 			buildPhases = (
 				3AD6B0262B7E4D4B0047E28E /* Sources */,
 				3AD6B0272B7E4D4B0047E28E /* Frameworks */,
@@ -247,9 +250,9 @@
 			dependencies = (
 				3AD6B02F2B7E4D4B0047E28E /* PBXTargetDependency */,
 			);
-			name = SuDoKuTests;
+			name = GemSudokuTests;
 			productName = SoDoKuTests;
-			productReference = 3AD6B02A2B7E4D4B0047E28E /* SuDoKuTests.xctest */;
+			productReference = 3AD6B02A2B7E4D4B0047E28E /* GemSudokuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -260,7 +263,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					3AD6B0142B7E4B1F0047E28E = {
 						CreatedOnToolsVersion = 15.2;
@@ -271,7 +274,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3AD6B0102B7E4B1F0047E28E /* Build configuration list for PBXProject "SuDoKu" */;
+			buildConfigurationList = 3AD6B0102B7E4B1F0047E28E /* Build configuration list for PBXProject "GemSudoku" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -279,6 +282,7 @@
 				en,
 				Base,
 				de,
+				sv,
 			);
 			mainGroup = 3AD6B00C2B7E4B1F0047E28E;
 			packageReferences = (
@@ -288,8 +292,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3AD6B0142B7E4B1F0047E28E /* SuDoKu */,
-				3AD6B0292B7E4D4B0047E28E /* SuDoKuTests */,
+				3AD6B0142B7E4B1F0047E28E /* GemSudoku */,
+				3AD6B0292B7E4D4B0047E28E /* GemSudokuTests */,
 			);
 		};
 /* End PBXProject section */
@@ -362,6 +366,7 @@
 				3AD567472B7FAE0C00A33160 /* GridView+Frame.swift in Sources */,
 				3AD6B03B2B7E7D740047E28E /* GameView.swift in Sources */,
 				3AD6B0352B7E4D8B0047E28E /* Board.swift in Sources */,
+				95C285CB2D466FD400CE99C7 /* ImageUtilities.swift in Sources */,
 				3A8A7A1F2B7EA18000732A44 /* Defaults+Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +387,7 @@
 /* Begin PBXTargetDependency section */
 		3AD6B02F2B7E4D4B0047E28E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3AD6B0142B7E4B1F0047E28E /* SuDoKu */;
+			target = 3AD6B0142B7E4B1F0047E28E /* GemSudoku */;
 			targetProxy = 3AD6B02E2B7E4D4B0047E28E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -393,6 +398,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -456,6 +462,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -516,11 +523,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = DEVELOPMENT;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = N8AA4S3S96;
+				DEVELOPMENT_TEAM = SZJ8KR5DQ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SuDoKu/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SuDoKu;
+				INFOPLIST_KEY_CFBundleDisplayName = GemSudoku;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -532,7 +539,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.rfk.sudoku;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braba.GemSudoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -553,11 +560,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = DEVELOPMENT;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = N8AA4S3S96;
+				DEVELOPMENT_TEAM = SZJ8KR5DQ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SuDoKu/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SuDoKu;
+				INFOPLIST_KEY_CFBundleDisplayName = GemSudoku;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -569,7 +576,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.rfk.sudoku;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braba.GemSudoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -595,7 +602,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuDoKu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SuDoKu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GemSudoku.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GemSudoku";
 			};
 			name = Debug;
 		};
@@ -613,14 +620,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuDoKu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SuDoKu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GemSudoku.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GemSudoku";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3AD6B0102B7E4B1F0047E28E /* Build configuration list for PBXProject "SuDoKu" */ = {
+		3AD6B0102B7E4B1F0047E28E /* Build configuration list for PBXProject "GemSudoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AD6B0212B7E4B210047E28E /* Debug */,
@@ -629,7 +636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AD6B0232B7E4B210047E28E /* Build configuration list for PBXNativeTarget "SuDoKu" */ = {
+		3AD6B0232B7E4B210047E28E /* Build configuration list for PBXNativeTarget "GemSudoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AD6B0242B7E4B210047E28E /* Debug */,
@@ -638,7 +645,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AD6B0302B7E4D4B0047E28E /* Build configuration list for PBXNativeTarget "SuDoKuTests" */ = {
+		3AD6B0302B7E4D4B0047E28E /* Build configuration list for PBXNativeTarget "GemSudokuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AD6B0312B7E4D4B0047E28E /* Debug */,
