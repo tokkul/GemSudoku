@@ -11,6 +11,7 @@ import Defaults
 struct PlayView: View {
     @Default(.size) private var size
     @Default(.difficulty) private var difficulty
+    @Default(.displayMode) private var displayMode
 
     @State var state: GameState = .loading
     
@@ -111,7 +112,7 @@ extension PlayView {
 //                            .labelStyle(.iconOnly)
 //                            .sensoryFeedback(.increase, trigger: displayMode)
 //                         }
-                        // Toggle button to switch between display modes
+//                         Toggle button to switch between display modes
 //                                      Button(action: {
 //                                          displayMode = (displayMode == .image) ? .color : .image
 //                                      }) {
