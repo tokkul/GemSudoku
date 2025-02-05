@@ -11,7 +11,7 @@ import Defaults
 struct PlayView: View {
     @Default(.size) private var size
     @Default(.difficulty) private var difficulty
-    
+
     @State var state: GameState = .loading
     
     var body: some View {
@@ -94,22 +94,32 @@ extension PlayView {
 extension PlayView {
     struct DebugCompleteModifier: ViewModifier {
         @Default(.size) private var size
-        
         @Binding var state: GameState
-        
+
         func body(content: Content) -> some View {
             content
                 #if DEBUG
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
-                        Button {
-                            let game = Game.init(board: .generate(size: size))
-                            game.board.values[0] = nil
-                            
-                            state = .ongoing(game: game)
-                        } label: {
-                            Image(systemName: "bolt.fill")
-                        }
+//                        Button {
+
+                            // Toggle button to switch between display modes
+//                                displayMode = (displayMode == .image) ? .color : .image
+                                
+//                        } label: {
+//                            Label("difficulty", systemImage: "circle")
+//                            .labelStyle(.iconOnly)
+//                            .sensoryFeedback(.increase, trigger: displayMode)
+//                         }
+                        // Toggle button to switch between display modes
+//                                      Button(action: {
+//                                          displayMode = (displayMode == .image) ? .color : .image
+//                                      }) {
+//                                          Text("gem")
+//                                      }
+//                                      .padding()
+//                                      .sensoryFeedback(.increase, trigger: displayMode)
+
                      }
                         
                     }

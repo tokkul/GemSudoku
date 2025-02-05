@@ -4,6 +4,36 @@
 //
 //  Created by Rasmus Krämer on 16.02.24.
 //
+//SelectBackground View
+//This view highlights the selected row, column, and 3x3 square in a grid.
+//
+//Properties:
+//
+//game: An instance of the Game model.
+//size: The size of each grid cell.
+//selectedSpace: A binding to the currently selected space in the grid.
+//Body:
+//
+//A VStack containing rows of the grid.
+//If selectedSpace is not nil, it iterates over the rows and columns of the grid.
+//For each cell, it calculates whether the cell is in the same row, column, or 3x3 square as the selected space.
+//It then displays a Rectangle with a gray background if the cell is in the same row, column, or 3x3 square as the selected space, otherwise it is clear.
+//Divider View
+//This view draws grid lines to visually separate the cells in the grid.
+//
+//Properties:
+//
+//game: An instance of the Game model.
+//width: The total width of the grid.
+//Body:
+//
+//A Group containing two Path elements.
+//The first Path draws thin lines (1 point) between the cells, except at the boundaries of the 3x3 squares.
+//The second Path draws thicker lines (2 points) at the boundaries of the 3x3 squares.
+//Both paths use the stroke modifier to set the line width and the foregroundStyle modifier to set the color.
+//Summary
+//The SelectBackground view highlights the selected row, column, and 3x3 square in the grid.
+//The Divider view draws the grid lines, with thicker lines at the boundaries of the 3x3 squares.
 
 import SwiftUI
 
@@ -65,7 +95,7 @@ extension GridView {
                         path.addLine(to: .init(x: width, y: offset))
                     }
                 }
-                .stroke(lineWidth: 1)
+                .stroke(lineWidth: 0)
                 
                 Path { path in
                     for i in 1...game.board.length {
@@ -82,7 +112,7 @@ extension GridView {
                         path.addLine(to: .init(x: width, y: offset))
                     }
                 }
-                .stroke(lineWidth: 2)
+                .stroke(lineWidth: 4)
             }
             .foregroundStyle(.accent)
         }

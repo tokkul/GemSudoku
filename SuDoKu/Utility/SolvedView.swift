@@ -20,7 +20,7 @@ struct SolvedView: View {
         VStack {
             Spacer()
             
-            Image(systemName: "medal.fill")
+            Image(.purple)
                 .font(.system(size: 75))
                 .foregroundStyle(.accent)
                 .padding(.bottom, 40)

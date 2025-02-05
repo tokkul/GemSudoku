@@ -10,33 +10,7 @@ import SwiftUI
 import Defaults
 import UIKit
 
-struct AnimatedImageView: View {
-    let number: Int
-    let index: Int
-    let animate: Bool
-    let game: Game
-    @Binding var displayMode: DisplayMode
-    
-    var body: some View {
-        let delay = (Double(index) / Double(game.board.length * game.board.length)) * 0.5
-        let springAnimation = Animation.spring(response: 0.2, dampingFraction: 0.2, blendDuration: 0.2)
-        let animation = springAnimation.delay(delay)
-
-        Group {
-            if displayMode == .image {
-                Image(imageName(for: number))
-                    .resizable()
-            } else {
-                Circle()
-                    .fill(imageColor(for: number))
-            }
-        }
-        .aspectRatio(1, contentMode: .fit)
-        .padding(1)
-        .scaleEffect(animate ? 1.5 : 1)
-        .animation(animation, value: animate)
-    }
-}
+//snip
 
 struct GridView: View {
     let game: Game
