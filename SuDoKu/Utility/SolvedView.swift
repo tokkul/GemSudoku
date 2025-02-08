@@ -63,7 +63,7 @@ struct SolvedView: View {
             switch difficulty {
                 case .easy:
                     key = .easySolved
-                case .medium:
+                case .xmedium:
                     key = .mediumSolved
                 case .hard:
                     key = .hardSolved

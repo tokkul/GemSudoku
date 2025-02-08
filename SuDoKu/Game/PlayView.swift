@@ -11,8 +11,8 @@ import Defaults
 struct PlayView: View {
     @Default(.size) private var size
     @Default(.difficulty) private var difficulty
-    @Default(.displayMode) private var displayMode
-
+//    @Default(.displayMode) private var displayMode
+    @State private var displayMode: DisplayMode = .image // Add displayMode state
     @State var state: GameState = .loading
     
     var body: some View {
@@ -25,7 +25,7 @@ struct PlayView: View {
                                 state = .ongoing(game: Game.create(size: size, difficulty: difficulty))
                             }
                     case .ongoing(let game):
-                        GameView(game: game) {
+                        GameView(game: game, displayMode: $displayMode) { // Pass displayMode binding
                             Task {
                                 try? await Task.sleep(nanoseconds: 500_000_000)
                                 state = .finished(valid: game.board.valid)
@@ -42,6 +42,16 @@ struct PlayView: View {
             }
             .modifier(ToolbarModifier() { state = .loading })
             .modifier(StatisticsModifier())
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {
+                        displayMode = (displayMode == .image) ? .color : .image
+                    }) {
+                        Label("displaymode", systemImage: "circle")
+                            .labelStyle(.iconOnly)
+                    }
+                }
+            }
         }
         .onChange(of: difficulty) { state = .loading }
     }
@@ -108,8 +118,8 @@ extension PlayView {
 //                                displayMode = (displayMode == .image) ? .color : .image
                                 
 //                        } label: {
-//                            Label("difficulty", systemImage: "circle")
-//                            .labelStyle(.iconOnly)
+//                           Label("difficulty", systemImage: "circle")
+//                           .labelStyle(.iconOnly)
 //                            .sensoryFeedback(.increase, trigger: displayMode)
 //                         }
 //                         Toggle button to switch between display modes

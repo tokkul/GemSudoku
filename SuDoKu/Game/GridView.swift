@@ -5,12 +5,57 @@
 //  Created by Rasmus Krämer on 15\.02\.24\. 
 //  Modified by Peter Eriksson 2025-01-26
 //
+//GridView Structure
+//Properties:
+//
+//let game: Game: The game model.
+//@Binding var selectedSpace: Int?: A binding to track the selected space.
+//@Binding var animation: GameView.GameAnimation: A binding to control animations.
+//@Binding var displayMode: DisplayMode: A binding to control the display mode.
+//Body:
+//
+//Uses GeometryReader to get the size of the available space.
+//Calculates the size of each cell based on the width of the view and the length of the game board.
+//Uses a ZStack to layer different components:
+//Rectangle: Background of the grid.
+//SelectBackground: Highlights the selected space.
+//Divider: Draws the grid lines.
+//Grid: Displays the actual game grid.
+//Styling:
+//
+//Adds a border and corner radius to the grid.
+//Maintains a 1:1 aspect ratio for the grid.
+//Grid Structure (Nested in GridView)
+//Properties:
+//
+//@Default(.allowMistakes) private var allowMistakes: A custom property wrapper for user settings.
+//let game: Game: The game model.
+//let size: CGFloat: The size of each cell.
+//@Binding var selectedSpace: Int?: A binding to track the selected space.
+//@Binding var animation: GameView.GameAnimation: A binding to control animations.
+//@Binding var displayMode: DisplayMode: A binding to control the display mode.
+//Body:
+//
+//Uses nested VStack and HStack to create the grid layout.
+//Iterates over the rows and columns of the game board using ForEach.
+//Calculates the index of each cell and determines if it should be animated based on the current animation state.
+//Uses Button to handle cell selection:
+//If the cell is empty or mistakes are allowed, it updates the selectedSpace state with animation.
+//Triggers haptic feedback on selection.
+//Cell Content:
+//
+//If the cell has a number, it displays an AnimatedImageView.
+//If the cell is selected, it shows a gray rectangle.
+//Otherwise, it shows a clear color.
+//Haptic Feedback:
+//
+//Defines a private function triggerHapticFeedback to provide haptic feedback when a cell is selected.
 
 import SwiftUI
 import Defaults
 import UIKit
 
-//snip
+//setup the square board
 
 struct GridView: View {
     let game: Game
@@ -26,13 +71,15 @@ struct GridView: View {
             
             ZStack {
                 Rectangle()
-                    .foregroundStyle(.background.secondary)
+//                    .foregroundStyle(.background.secondary)
+                   .foregroundStyle(.blue.opacity(0.3))
                 
                 SelectBackground(game: game, size: size, selectedSpace: $selectedSpace)
                 Divider(game: game, width: width)
                 Grid(game: game, size: size, selectedSpace: $selectedSpace, animation: $animation, displayMode: $displayMode )
             }
-            .border(.accent, width: 2)
+            .border(.accent, width: 4)
+            .cornerRadius(20)
         }
         .aspectRatio(1, contentMode: .fit)
      }
@@ -105,7 +152,7 @@ extension GridView {
             }
         // Function to trigger haptic feedback
                 private func triggerHapticFeedback() {
-                    let generator = UIImpactFeedbackGenerator(style: .medium)
+                    let generator = UIImpactFeedbackGenerator(style:.soft)
                     generator.impactOccurred()
                 }
  

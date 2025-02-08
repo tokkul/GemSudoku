@@ -67,32 +67,37 @@ struct NumberView: View {
     }
     
     var body: some View {
-        let disabled = selectedSpace == nil
-                LazyVGrid(columns: .init(repeating: .init(.flexible()), count: game.board.length)) {
-                   ForEach(1...game.board.length, id: \.hashValue) { number in
-                       
-                       Button {
-                           let result = game.input(number: number, index: selectedSpace!)
-                           
-                           if !result.success {
-                               shake = true
-                               
-                               withAnimation(.spring(response: 0.2, dampingFraction: 0.2, blendDuration: 0.2)) {
-                                   shake = false
-                               }
-                           } else {
-                               withAnimation(.spring) {
-                                   selectedSpace = nil
-                                   animation = result.animation
-                               } completion: {
-                                   animation = .none
-                               }
-                           }
-                       } label: {
-                           AnimatedImageView(number: number, index: index, animate: animate, game: game, displayMode: $displayMode)
-                       }
-                   }
-               }
-               .disabled(disabled)
-       }
+                let disabled = selectedSpace == nil
+                let columns = Array(repeating: GridItem(.flexible()), count: game.board.length)
+  
+                LazyVGrid(columns: columns) {
+                    ForEach(1...game.board.length, id: \.hashValue) { number in
+                        Button {
+                            let result = game.input(number: number, index: selectedSpace!)
+                            
+                            if !result.success {
+                                shake = true
+                                
+                                withAnimation(.spring(response: 0.2, dampingFraction: 0.2, blendDuration: 0.2)) {
+                                    shake = false
+                                }
+                            } else {
+                                withAnimation(.spring) {
+                                    selectedSpace = nil
+                                    animation = result.animation
+                                } completion: {
+                                    animation = .none
+                                }
+                            }
+                        } label: {
+                            AnimatedImageView(number: number, index: index, animate: animate, game: game, displayMode: $displayMode)
+                                .aspectRatio(1, contentMode: .fit) // Maintain aspect ratio
+                        }
+                    }
+                }
+                 .disabled(disabled)
+                 .padding()
+//                .aspectRatio(1, contentMode: .fit)
+  }
+    
     }

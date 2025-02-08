@@ -19,8 +19,7 @@ public extension Defaults.Keys {
     
     static let size = Key<Board.Size>("size", default: .NineXNine)
     static let difficulty = Key<Board.Difficulty>("difficulty", default: .easy)
-//    pete
-    static let displayMode = Key<Bool>("displayMode", default: true)
+    
     static let setupComplete = Key("setupComplete", default: false)
     
     // MARK: Statistics

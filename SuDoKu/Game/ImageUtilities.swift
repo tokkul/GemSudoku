@@ -17,7 +17,7 @@ struct AnimatedImageView: View {
     let index: Int
     let animate: Bool
     let game: Game
-    @Binding var displayMode: DisplayMode
+   @Binding var displayMode: DisplayMode
     
     var body: some View {
         let delay = (Double(index) / Double(game.board.length * game.board.length)) * 0.5
@@ -30,7 +30,7 @@ struct AnimatedImageView: View {
                     .resizable()
             } else {
                 Circle()
-                    .fill(imageColor(for: number))
+                    .fill(imageColor(for: number).gradient)
             }
         }
         .aspectRatio(1, contentMode: .fit)

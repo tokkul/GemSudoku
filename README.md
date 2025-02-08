@@ -1,9 +1,6 @@
 #  GemSudoku
 
-A simple Color SuDoKu application written in SwiftUI.
-
-A color or Gem Sudoku app crafted for iOS 17! Designed for Sudoku enthusiasts seeking a straightforward and distraction-free solving experience, this app offers simplicity at its core.
-
+Solve
 Features:
 
 - Classic Sudoku Puzzles: Dive into a collection of classic Sudoku puzzles, ranging in difficulty from beginner to expert

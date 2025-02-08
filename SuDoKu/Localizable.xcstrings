@@ -431,6 +431,9 @@
         }
       }
     },
+    "displaymode" : {
+
+    },
     "easySolved %lld" : {
       "localizations" : {
         "de" : {

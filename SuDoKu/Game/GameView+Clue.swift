@@ -16,7 +16,7 @@ extension GameView {
         
         @Binding var blockUI: Bool
         @Binding var selectedSpace: Int?
-        @Binding var displayMode: DisplayMode
+//        @Binding var displayMode: DisplayMode
         
         var body: some View {
             VStack {
@@ -31,13 +31,13 @@ extension GameView {
                 }
                 
                 // Toggle button to switch between display modes
-                              Button(action: {
-                                  displayMode = (displayMode == .image) ? .color : .image
-                              }) {
-                                  Text("gem")
-                              }
-                              .padding()
-                              .sensoryFeedback(.increase, trigger: displayMode)
+//                              Button(action: {
+//                                  displayMode = (displayMode == .image) ? .color : .image
+//                              }) {
+//                                  Text("gem")
+//                              }
+//                              .padding()
+//                              .sensoryFeedback(.increase, trigger: displayMode)
 
                 
                 Button {

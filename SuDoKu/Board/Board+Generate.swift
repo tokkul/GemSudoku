@@ -5,7 +5,61 @@
 //  Created by Rasmus Krämer on 15\.02\.24\. 
 //  Modified by Peter Eriksson 2025-01-26
 //
-
+//        Board Extension
+//        generate(size:) Method
+//        This method generates a Sudoku board of a specified size.
+//
+//        Initialization:
+//
+//        length: The size of the board (e.g., 4 for 4x4, 9 for 9x9).
+//        numbers: An array of numbers from 1 to length.
+//        side: The square root of length, representing the size of each sub-grid.
+//        board: An empty array to hold the board values.
+//        Generate Starting Point:
+//
+//        Iterates over each row to create a valid starting board.
+//        Uses an offset to shift the numbers in each row, ensuring a valid Sudoku configuration.
+//        Swap Random Numbers:
+//
+//        Swaps random numbers three times to add variability to the board.
+//        Shuffle Rows Inside a Square:
+//
+//        Shuffles rows within each sub-grid group seven times to further randomize the board.
+//        Shuffle Columns Inside a Square:
+//
+//        Shuffles columns within each sub-grid group seven times.
+//        Shuffle Square Rows and Columns:
+//
+//        Shuffles entire rows and columns of sub-grids three times each to ensure a well-mixed board.
+//        Return Board:
+//
+//        Returns the generated board with the specified size and values.
+//        Size Enum
+//        Defines the possible sizes for the Sudoku board:
+//
+//        FourXFour (4x4)
+//        NineXNine (9x9)
+//        Board Extension (Obfuscation)
+//        obfuscate(difficulty:) Method
+//        This method obfuscates the board by removing numbers based on the specified difficulty.
+//
+//        Initialization:
+//
+//        allowedIndexes: An array of all possible indexes on the board.
+//        Obfuscation Loop:
+//
+//        Randomly selects an index and attempts to remove the number at that index.
+//        Checks if the board is still solvable after removing the number.
+//        Continues until the board meets the difficulty level or there are no more allowed indexes.
+//        Difficulty Enum
+//        Defines the difficulty levels for obfuscation:
+//
+//        easy (60% solved)
+//        xmedium (50% solved)
+//        hard (40% solved)
+//        extreme (30% solved)
+//        Difficulty Extension
+//        Provides localized names for each difficulty level.
 import Foundation
 import Defaults
 import SwiftUI
@@ -128,7 +182,7 @@ public extension Board {
     
     enum Difficulty: Float, Defaults.Serializable, CaseIterable {
         case easy = 0.6
-        case medium = 0.5
+        case xmedium = 0.5
         case hard = 0.4
         case extreme = 0.3
     }
@@ -139,7 +193,7 @@ extension Board.Difficulty {
         switch self {
             case .easy:
                 return "difficulty.easy"
-            case .medium:
+            case .xmedium:
                 return "difficulty.medium"
             case .hard:
                 return "difficulty.hard"
